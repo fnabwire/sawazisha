@@ -450,7 +450,6 @@ pre {
   overflow-y: scroll; }
 
 .container {
-  max-width: 1140px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -7486,21 +7485,16 @@ h1, h2, h3, h4, h5,
     font-size: 30px; }
 
 .hero-wrap {
-  width: 100%;
-  height: calc(100vh - 117px);
-  min-height: 700px;
-  position: relative; }
-  .hero-wrap.hero-wrap-2 {
-    height: 600px; }
-  .hero-wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: 0;
-    background: #000; }
+    background-size: cover;
+    background-position: center center;
+    height: 300px; /* Adjust the height as needed */
+}
+
+@media (min-width: 768px) {
+    .hero-wrap {
+        height: 500px; /* Adjust the height for larger screens */
+    }
+}
 
 .slider-text {
   color: #fff;
