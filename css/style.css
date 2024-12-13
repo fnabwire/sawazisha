@@ -7742,41 +7742,55 @@ h1, h2, h3, h4, h5,
 .carousel-cause.owl-carousel .owl-stage-outer {
   padding-bottom: 2em;
   position: relative; }
-
-.cause-entry {
-  background: #fff;
-  border: 1px solid #fafafa;
-  -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px; }
+  .cause-entry {
+    background: #fff;
+    border: 1px solid #fafafa;
+    box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+  
   .cause-entry .img {
     display: block;
-    height: 300px; }
-  @media (min-width: 768px) {
-    .cause-entry .text {
-      margin-top: -40px !important;
-      background: #fff;
-      width: 90%;
-      margin: 0 auto; } }
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cause-entry .text {
+    padding: 20px;
+    text-align: center;
+  }
+  
   .cause-entry .text h3 {
-    margin-bottom: 20px; }
-    .cause-entry .text h3 a {
-      color: #000; }
+    margin-bottom: 20px;
+  }
+  
+  .cause-entry .text h3 a {
+    color: #000;
+  }
+  
   .cause-entry .text .custom-progress-success {
     background-color: #f2f2f2;
-    height: .3rem;
+    height: 0.3rem;
     border-radius: 4px;
-    margin-bottom: 20px; }
-  .cause-entry span.donation-time {
-    font-style: italic;
-    color: #cfcfcf; }
-  .cause-entry span.fund-raised {
-    color: #000; }
+    margin-bottom: 20px;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .row-section {
+      display: flex;
+      flex-direction: column; /* Stack cards vertically */
+    }
+  
+    .cause-entry {
+      margin: 10px auto; /* Center align cards and add spacing */
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
 
 .ftco-section-3 {
   padding: 8em 0;
