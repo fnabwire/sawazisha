@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>sawazisha</title>
+    <title>Sawazisha - Causes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .cause-entry {
+        background: #fff;
+        border: 1px solid #fafafa;
+        box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .cause-entry .img {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+      }
+      .cause-entry .text {
+        padding: 20px;
+      }
+      .cause-entry .text h3 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+      .cause-entry .text p {
+        font-size: 1rem;
+        color: #555;
+      }
+      @media (max-width: 767px) {
+        .cause-entry {
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Sawazisha</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Sawazisha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item active"><a href="causes.html" class="nav-link">Causes</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item active"><a href="causes.html" class="nav-link">Causes</a></li>
+            <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <!-- END nav -->
     
     <div class="hero-wrap" style="background-image: url('images/SDG.jpg');" data-stellar-background-ratio="0.5">
@@ -56,7 +81,9 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Causes</span></p>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <span class="mr-2"><a href="index.html">Home</a></span> <span>Causes</span>
+            </p>
             <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Causes</h1>
           </div>
         </div>
@@ -66,77 +93,70 @@
     
     <section class="ftco-section">
       <div class="container">
-      	<!-- <div class="row"> -->
-          <div class="row-section">
-            <div class="col-md-4 ftco-animate">
-              <div class="cause-entry">
-                <a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
-                <div class="text p-3 p-md-4">
-                  <h3>Education and Awareness</h3>
-                  <p>Raising awareness and educating both men and women about gender equality...</p>
-                </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-1.jpg');"></div>
+              <div class="text">
+                <h3>Education and Awareness</h3>
+                <p><br>Raising awareness and educating both men and women about gender equality is crucial. <br>We promote gender-sensitive education and awareness campaigns to challenge stereotypes, <br>reduce discrimination, and encourage an inclusive society to all people.</p>
               </div>
             </div>
+          </div>
 
-      		  
-            <div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-2.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3>Empowerment and Representation</h3>
-    						<p>Encouraging equal representation in politics, business, and education,ensuring that women's voices are heard and considered in important decisions.We empower women and underrepresented groups to take on leadership roles in their communities.Empowering women to take leadership roles and participate.</p>
-    						                
-    					</div>
-    				</div>
-      		</div>
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-2.jpg');"></div>
+              <div class="text">
+                <h3>Empowerment and Representation</h3>
+                <p>Encouraging equal representation in politics, business, and education,ensuring that women's voices are heard and considered in important decisions.We empower women and underrepresented groups to take on leadership roles in their communities.Empowering women to take leadership roles and participate.
 
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-3.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3>Cultural and Social Change</h3>
-    						<p>Challenging deep-rooted cultural norms that dictate gender roles is essential for creating a more equitable society.<br>In the same way that a nationwide campaign requires reaching all corners of the country, achieving gender equality requires cultural and social shifts that reach every community.</p>
-    						
-    					</div>
-    				</div>
-      		</div>
+                </p>
+              </div>
+            </div>
+          </div>
           
-        </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-3.jpg');"></div>
+              <div class="text">
+                <h3>Cultural and Social Change</h3>
+                <p><br>Challenging deep-rooted cultural norms that dictate gender roles is essential for creating a more equitable society.<br>
+                  In the same way that a nationwide campaign requires reaching all corners of the country, achieving gender equality requires cultural and social shifts that reach every community.</p>
+              </div>
+            </div>
+          </div>
 
-          <div class="row-separator"></div>
-          <div class="row-section bottom-rows">
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-4.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3>Legal and Policy Reforms</h3>
-    						<p>We push for legal reforms and the implementation of policies that ensure equal rights for all genders at all times.Reforming discriminatory laws and policies ensures that women and men have equal access to resources,education and opportunities.Gender equality requires robust legal frameworks and policies that protect people's rights.</p>
-    						
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-5.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3>Support Systems and Resources</h3>
-    						<p> At Sawazisha,we prioritize establishing robust support systems and resources to foster gender equality.<br> Women and men need access to support systems and resources, such as education, healthcare, and financial services.<br>Providing these resources helps them overcome barriers and achieve their full potential.</p>
-    						
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-6.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3>Inclusive Participation</h3>
-    						<p>We are dedicated to fostering inclusive participation, ensuring that every voice is heard and valued in decision-making processes.<br>By creating spaces where diverse perspectives are welcomed and respected.<br>We implement mechanisms for regular feedback and dialogue, allowing us to continuously improve our programs and ensure they remain relevant </p>
-    						
-    					</div>
-    				</div>
-      		</div>
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-4.jpg');"></div>
+              <div class="text">
+                <h3>Legal and Policy Reforms</h3>
+                <p>We push for legal reforms and the implementation of policies that ensure equal rights for all genders.<br>Reforming discriminatory laws and policies ensures that women and men have equal access to resources,education and opportunities.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-5.jpg');"></div>
+              <div class="text">
+                <h3>Support Systems and Resources</h3>
+                <p>We prioritize establishing robust support systems and resources to foster gender equality, including access to education, healthcare, and financial services.<br>Providing these resources helps them overcome barriers and achieve their full potential.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="cause-entry">
+              <div class="img" style="background-image: url('images/cause-6.jpg');"></div>
+              <div class="text">
+                <h3>Inclusive Participation</h3>
+                <p><br>We foster inclusive participation, ensuring that every voice is heard and valued in decision-making processes by creating spaces for diverse perspectives.<br>By creating spaces where diverse perspectives are welcomed and respected.</p>
+              </div>
+            </div>
+          </div>
         </div>
-     
       </div>
     </section>
 
